@@ -44,7 +44,9 @@
   font-weight: bold;
 }
 
-/* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   font-size: 66px;
@@ -64,7 +66,7 @@
 .header__image {
   max-width: 636px;
   z-index: 1;
-  right: 135px;
+  right: 20px;
   top: 135px;
   position: absolute;
 }
@@ -86,7 +88,9 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .header__link here */
+.header__link:hover {
+  color: #1f69c9;
+}
 
 .header__address {
   margin: 0;
@@ -114,7 +118,14 @@
   margin: 24px 0 0;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff__cards {
+  max-width: 760px;
+  margin: 68px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
 
 .card {
   background-color: #fff;
@@ -123,6 +134,7 @@
   box-sizing: border-box;
   width: 360px;
   height: 420px;
+  list-style: none;
 }
 
 .card__content {
@@ -227,7 +239,9 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
   flex-grow: 1;
@@ -315,11 +329,13 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  justify-content: flex-start;
 }
 
 .step {
-  /* Add styles */
+  max-width: 220px;
+  gap: 40px;
 }
 
 .step__title {
